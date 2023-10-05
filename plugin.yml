@@ -1,0 +1,6 @@
+name: ChatCooldown
+version: 1.0.0
+api: 5.0.0
+main: WildanDev\ChatCooldown
+author: Wildan
+description: A chat cooldown plugin
