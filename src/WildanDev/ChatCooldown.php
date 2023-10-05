@@ -14,10 +14,8 @@ class ChatCooldown extends PluginBase implements Listener {
     private $chatCooldowns = [];
 
     public function onEnable(): void {
-        $this->saveDefaultConfig(); // Ini akan membuat config.yml jika belum ada
-        $this->reloadConfig(); // Ini akan memuat konfigurasi dari berkas config.yml
-
-        $this->getLogger()->info("ChatCooldown plugin enabled!");
+        $this->saveDefaultConfig();
+        $this->reloadConfig();
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
 
