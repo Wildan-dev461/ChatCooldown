@@ -32,7 +32,7 @@ class ChatCooldown extends PluginBase implements Listener {
         if (isset($this->chatCooldowns[$playerName]) && $this->chatCooldowns[$playerName] > $currentTime) {
             $remainingTime = $this->chatCooldowns[$playerName] - $currentTime;
             $player->sendMessage(TextFormat::RED . "You are on cooldown. Please wait for " . $remainingTime . " seconds before chatting again.");
-            $event->cancel(true);
+            $event->cancel();
         } else {
             // Set a new cooldown time (e.g., 10 seconds) for the player
             $this->chatCooldowns[$playerName] = $currentTime + 3;
