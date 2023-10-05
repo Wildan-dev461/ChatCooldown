@@ -1,0 +1,7 @@
+# ChatCooldown configuration
+
+# Use § to color the message
+# chatcooldown.bypass -> this permission make your player bypass the plugin
+
+cooldown_time: 3 # Cooldown time in seconds
+cooldown_message: "§cYou are on cooldown. Please wait for {remaining_time} seconds before chatting again."
